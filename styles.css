@@ -48,3 +48,43 @@ h1, h2, h3, h4, h5, h6 {
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
+body {
+  --dashboard-white: #f2f2f2;
+  --dashboard-black: #0d0d0d;
+  --dashboard-grey: #E7E7E7;
+  --dashboard-yellow: #DC851F;
+  --dashboard-blue: #586994;
+}
+
+#container {
+  height: 100vh;
+  
+  display: grid;
+  grid: 1fr 5fr / 1fr 4fr;
+  grid-template-areas: 
+    'sidebar header'
+    'sidebar main-content'
+  ;
+}
+
+#sidebar {
+  background-color: var(--dashboard-blue);
+
+  grid-area: sidebar;
+  z-index: 2;
+}
+
+#header {
+  background-color: var(--dashboard-white);
+  box-shadow: 3px 1px 5px 6px #6a6a6a47;
+
+  grid-area: header;
+  z-index: 1;
+}
+
+#main-content {
+  background-color: var(--dashboard-grey);
+
+  grid-area: main-content;
+}
+
