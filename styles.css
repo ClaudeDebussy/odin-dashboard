@@ -146,6 +146,9 @@ ul {
 
   grid-area: header;
   z-index: 1;
+
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .header-top {
@@ -156,6 +159,7 @@ ul {
   align-items: center;
 
   padding-top: 1em;
+  margin-bottom: 2em;
 }
 
 .search-bar {
@@ -164,7 +168,7 @@ ul {
   display: flex;
   align-items: center;
   
-  padding-left: 2em;
+
   padding-right: 2em;
   width: 100%;
 }
@@ -188,8 +192,6 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
-  padding-right: 2em;
 }
 
 .alerts-profile-area svg {
@@ -217,8 +219,63 @@ ul {
 }
 
 .alerts-profile-area h3 a:hover {
-  color: var(--dashboard-blue);
+  color: var(--dashboard-yellow);
   text-decoration: underline;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.salutation-area {
+  display: flex;
+  align-items: flex-end;
+}
+
+.salutation-area img {
+  object-fit: cover;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.salutation-area p {
+  line-height: 1.7em;
+  font-weight: 600;
+}
+
+.salutation-area h1 {
+  line-height: 1;
+}
+
+.three-button-area button {
+  font-size: 1.3em;
+  font-weight: 600;
+
+  color: var(--dashboard-white);
+  background-color: var(--dashboard-blue);
+
+  border: none;
+  border-radius: 1em;
+
+  padding: .3em 1.5em;
+  margin-right: .2em;
+}
+
+.three-button-area button:last-child {
+  margin-right: 0;
+}
+
+.three-button-area button:hover {
+  background-color: var(--dashboard-yellow);
+  cursor: grab;
+}
+
+.three-button-area button:active {
+  background-color: var(--dashboard-black);
 }
 
 /* MAIN CONTENT */
