@@ -128,6 +128,16 @@ ul {
   margin-right: 1.1em;
 }
 
+.inline-menu-item a {
+  text-decoration: none;
+  color: var(--dashboard-white);
+}
+
+.inline-menu-item a:hover {
+  text-decoration: underline;
+  color: var(--dashboard-grey);
+}
+
 /* HEADER */
 
 #header {
