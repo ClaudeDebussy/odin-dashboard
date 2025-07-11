@@ -354,8 +354,30 @@ ul {
 }
 
 .announcements-trending-area {
-  background-color: var(--dashboard-blue);
+  /* background-color: var(--dashboard-blue); */
 
   grid-area: announcements-trending-area;
+
+  padding-left: 1em;
 }
 
+.announcements-trending-area .card {
+  border-left: none;
+  padding: 2em;
+}
+
+.announcements-trending-area h3 {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: .25em;
+}
+
+.announcements-divider-line {
+  height: 1px;
+  border-bottom: 1px solid var(--dashboard-blue);
+  width: 75%;
+  display: grid;
+  place-self: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
