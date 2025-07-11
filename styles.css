@@ -367,9 +367,13 @@ ul {
 }
 
 .announcements-trending-area h3 {
-  font-size: 1em;
+  font-size: .9em;
   font-weight: 500;
   margin-bottom: .25em;
+}
+
+.announcements-trending-area p {
+  font-size: .8em;
 }
 
 .announcements-divider-line {
@@ -380,4 +384,39 @@ ul {
   place-self: center;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.trending-line {
+  display: grid;
+  grid-template-areas: 
+  'image handle'
+  'image username';
+  grid-template-columns: 48px auto;
+  margin-bottom: 1em;
+  align-items: end;
+}
+
+.trending-line img {
+  grid-area: image;
+  
+  object-fit: cover;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.trending-line .handle,
+.trending-line .username {
+  margin-left: 2em;
+  justify-self: left;
+}
+
+.trending-line .handle {
+  grid-area: handle;
+  
+  color: var(--dashboard-black);
+}
+
+.trending-line .username {
+  grid-area: username;
 }
